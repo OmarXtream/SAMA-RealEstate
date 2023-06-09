@@ -48,7 +48,7 @@
         <!--Form Container-->
         <div class="form-container" dir="rtl">
             <div class="default-form">
-                <form method="POST" action="{{route('PropertiesMarkating.create')}}">
+                <form method="POST" action="{{route('InfoForm.create')}}">
                     @csrf
                     <div class="row clearfix">
 
