@@ -50,7 +50,6 @@
                 <form method="POST" action="{{route('PropertieRequest.create')}}">
                     @csrf
                     <div class="row clearfix">
-                        <h6>البيانات الشخصية</h6>
 
                         <div class="form-group col-md-12 col-sm-12 col-xs-12">
                             <input class="{{ $errors->has('name') ? 'is-invalid' : '' }}" type="text" name="name" value="{{ old('name') }}" placeholder="الاسم" required>
@@ -82,7 +81,6 @@
     
                         </div>
 
-                        <p>تفاصيل العقار</p>
 
                         <div class="form-group col-md-12 col-sm-12 col-xs-12">
                             <input class="{{ $errors->has('type') ? 'is-invalid' : '' }}" type="text" name="type" value="{{ old('type') }}" placeholder="نوع العقار" required>
@@ -142,7 +140,6 @@
                         </div>
 
 
-                        <p>الأحياء</p>
 
                         
                         <div class="form-group col-md-6 col-sm-12 col-xs-12">
@@ -184,7 +181,6 @@
                         </div>
                         
 
-                        <p>تفاصيل إضافية للعقار</p>
 
                         <div class="form-group col-md-12 col-sm-12 col-xs-12">
                             <textarea class="@if ($errors->has('details')) is-invalid @endif" name="details" placeholder="تفاصيل إضافيه" required>{{ old('details') }}</textarea>
